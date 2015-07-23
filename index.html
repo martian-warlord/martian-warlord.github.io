@@ -14,7 +14,9 @@
 <p>I started customizing the sory-in-pomes template by zooming Googles map API into Fez, Morocco where the streets are so twisted they didnt even publish maps until recently.  It looked great. Map based narrative has recently been more rooted in the video game narrative domain so I started thinking about video game narratives.  One dimesion of game playing a narrative is the use of prescriptive story events rather than descriptive events.</p> 
 <p>While I was very happy with the first step of the map based horror/comedy/satire narrative game direction, I reminded myself that some of my better job leads in Madison Wisconsin are doing educational games.  If I wanted to extend the life of this project beyond class goals, I probably wanted to make something fun happy and silly.  I had previous scraped a list of vocabulary words from a wide array of self affirmation posts on the internet.  I decided approach my first word cloud with this list.</p>
 <p>To implement the word cloud I started by looking for an example that could generate word clouds dynamically from arrays.  I wanted an approach that could be combined with generative poetry.  I found a nice D3 example, and then found a stripped down version that only used right angles.  I dropped in the list of affirmations and it looked awesome.</p>
-<p>Back at the map based approach, I decided that Google Maps wasnt as relevant to this project but that the affirmations worked as an affective map or emotional map.  I thought it would make a good compass pointer for quests.  At this point I was at a cross roads.  The introduction ofthe template as part of the class assignment was suggestive of an assigned approach.  However, a previous conversation I had had with Alec on the subject of class parameters seemed to be open to exploration.  I decided to move forward and double check with Alec</p>
+<p>Back at the map based approach, I decided that Google Maps wasnt as relevant to this project but that the affirmations worked as an affective map or emotional map.  I thought it would make a good compass pointer for quests.  At this point I was at a cross roads.  The introduction ofthe template as part of the class assignment was suggestive of an assigned approach.  However, a previous conversation I had had with Alec on the subject of class parameters seemed to be open to exploration.  I decided to move forward and double check with Alec.  "Yes" it's a safe assumption that this conceptual jump works with the class's educational goals.  </p>
+<p>So the project, at it's core became clicking on word cloud key events and triggering quests from a list that matches the appropriate keyword.  I started thinking about how to export the word array.  It seemed more direct to get this list after it had been propogated to the screen as svg text.  I searched around athe D3 documentation and found the right syntax to add corresponding IDs to each of the text words.  Upon reflection this wasnt necessarily the right approach but I kept it incase I wanted to add animation to a click event.  The next direction was to use D3 click handling syntax to trigger a function that corresponds to each text word. I spent several hours searching for the right documentation to accomplish this direction.  Eventually I asked Alec and he told me about the eval() function to get the string value of an array call. It worked!  I was now triggering corresponding keyword functions based on the keyword click events.  </p>
+<p>I then thought about how to display the quest text.  We had just worked on a personal pages with a card flipping effect.  It seemed well suited to a small screen app.  However, I remember the card structure to be a bit convoluted so I searched for a more basic tutorial online.  I looked at five or six examples, asked Shaunalynn for help, and cobbed together a version that worked.</p>
 
 
 <h2><a href="https://github.com/martian-warlord/DGMDS15">Final Project</a></h2>
@@ -26,7 +28,31 @@
 <ul>
 <li>Target User: Police with body cams</li>
 <li>Problem it solves: Emotional Awareness and PR</li>
-<li>Hardware list: Body cam and Harness, smart phone </li>
+<li>Hardware list: Body cam and Harness, smart phone </li></ul>
+
+<h2>DAILY THOUGHTS</h2>
+<h3>Week 1</h3>
+<h4>DAY 1</h4>
+<p>Met w Alec at Clover</p>
+<p>Tech Hell</p>
+<p>Personal Page.  Intro to HTML, CSS, Javascript</p>
+<h4>DAY 2</h4>
+<p>Tech Fixed.  Intro to Pomes.  Buying Wearables.</p>
+<h4>DAY 3</h4>
+<p>Pomes.  Story?  Product?</p>
+<h4>DAY 4</h4>
+<p>Pomes.  Story?  Product discussion?</p>
+<h4>Friday</h4>
+<p>Flickr API.  Scaled back project expectation.</p>p>
+
+<h3>Week 2</h3>
+<h4>DAY 1</h4>
+<p>Project Discussion.  Project goals submitted. 10 Tuts.  Brick wall w Node.  Trying to learn node.</p>
+<h4>DAY 2</h4>
+<p>Paired Programming.  Circles.  Project breakthrough w URL approach.</p>
+<h4>DAY 3</h4>
+
+<h4>DAY 4</h4>
 
 
 
