@@ -30,32 +30,90 @@
 <li>Problem it solves: Emotional Awareness and PR</li>
 <li>Hardware list: Body cam and Harness, smart phone </li></ul>
 
+<h4>Production notes</h4>
+<p>On the second day of class I went to Best Buy to get the most popular body camera and smart watch.  It looks like body cameras have not caught on at all.  CV capabilities ahve not been successfully turned into mobile products and people don't have a reason to see the upside of these wearables vs concerns or indifference.  So...  The GoPro is an "Action Camera."  This means that its big and (proabbly due to spy cam/bad publicity concerns) extremely conspicuous. The only harness for wearing the camera on the body looks like a military harness.  </p>
+
+<p>The most popular smart watch is the fit bit.  I purchased a cheaper fitbit expecting it to have a pulse tracking ability I could use to trigger the camera.  No.  Its basically a $100 pedometer.  I return the next day and get the more expensive model that measures pulse.  I do research into existing projects that use pulse measurement.  It looks like the pulse API is only available by special request to Fitbits developer team.  It seems that fitbit is not a good interface for immediate events.  It expects its moment to moment readings to be be iffy and thus uses averages to get reasonable numbers.  It uses progressive enhancement as a marketing tool.  The more expensive Fitbits seem may have the ability to interact with immediate events, but I have to set aside that path for another project.  Right now Fitbit is a bust.  I should have bought an Apple Watch.  I continue to use the Fitbit to learn more about its UX.  It looks like its main interaction with the customer is to push positive encouraging messages over and over again.  I gues customers are less likely to drop a product that sends several compliments per day.  </p>
+
+<p>Back to the gopro. </p>
+
+<p>I forgot thi step, so I'm going back and adding it.  Initially, I wanted use GoPro as a video camera where the user stored a buffer to a cellphone. The user would then use triggers to offload the buffer as a file.  When I discussed this with Alec he suggested looking for streaming documentation.  My initial GoPro research was into streaming options.  There was an extremely convoluted description of connecting GoPro to GoLive.  Hmmmm.   Later conversation with Alec leads to a decision to merely taking a picture and saving it to a local smart phone or computer.  When I purchase the GoPro I discover that the set up process is stupid.  The camera only has two buttons and the documentation keeps changing the words it uses to describe these same buttons.  I end up having more success when I ignore the official documentation and use the device intuitively.  The most stressful part is putting in the memory card, which has to be shoved in hard at an angle.  A first time user might not want to shove parts in at weird angles, without knowing they are doing the right thing first.  Now the camera is working.</p>
+
+<p>Alec shows me a Node library with a nice set of functions.  I can only wrap my brain around node by relating it to complete web applications.  This is incorrect.  I should look at it more in relation to pre-processors.  Except that I have to install node in the directory on the server.  ...  And I have to use Bower if I want the browser to use these scripts.  Um...  I need a class in this stuff.  I watch every tutorial on Linda.  I get a basic understanding of dependency lists and installing for the comand line versus for a given project and etc.  I start to dig in.  No the learning curve is not easy for me.  I go back and start walking through the easier tutorials step by step.  Sam tells me about Meteor.  I start a Meteor tutorial.  I start to tell Alec and he gives me a bewildering look and shows that I should merely install the node package in a directory and use it like a preprocessor.  </p>
+<p>Meanwhile I have been digging into the node library documentation to see if I can figure out how the functions work and bypass the node library.  I randomly pull open piece of side documentation and find a list of URL commands.  I think that the link are to further documentation but Im getting JSON back instead.  Hmmmm.  URLs as commands?  Thats new to me. I follow the instructions used for syncing GoPro's local Wifi network to the iPhone app and connect my computer. Yes, it recognizes the camera and I can start the video.  Unfortunately theres no description for taking a picture.  I spend a couple hours Googling around for anything about taking a picture.  Eventually I get the idea to put the camera into photo mode and trigger the shutter.  Bullseye.  It worked.  
+
+I decided to put them in a test html file.  I assume that they need error handling so I use the AJAX example that I was using for Flickr.  (I think its half based on the AJAX example Alec made as a Pome option?).  I follow 
+
+
+
+
+
 <h2>DAILY THOUGHTS</h2>
 <h3>Week 1</h3>
 <h4>DAY 1</h4>
+Getting situated
+Why do people code?
+specifying and scoping great projects
+ 
+
+
 <p>Met w Alec at Clover</p>
 <p>Tech Hell</p>
 <p>Personal Page.  Intro to HTML, CSS, Javascript</p>
 <h4>DAY 2</h4>
+pomes, /people, and github
+resources on stories and storytelling
+
 <p>Tech Fixed.  Intro to Pomes.  Buying Wearables.</p>
 <h4>DAY 3</h4>
-<p>Pomes.  Story?  Product?</p>
+what makes for good stories
+
+
 <h4>DAY 4</h4>
-<p>Pomes.  Story?  Product discussion?</p>
-<h4>Friday</h4>
-<p>Flickr API.  Scaled back project expectation.</p>p>
+short overview of the tessel’s capabilities
+ 
+<h4>DAY 5</h4>
+<p>Flickr API.  Scaled back project expectations.</p>
 
 <h3>Week 2</h3>
 <h4>DAY 1</h4>
+stepping-stone sketches
+spec-ing and sketching
+
 <p>Project Discussion.  Project goals submitted. 10 Tuts.  Brick wall w Node.  Trying to learn node.</p>
 <h4>DAY 2</h4>
+Circles, object orientation, pair programming
 <p>Paired Programming.  Circles.  Project breakthrough w URL approach.</p>
+The lecture was a nice demo of paired programming and object oriented graphics.
+
+I was at a front table with two beginners and another student with intermediate skills.  We decided to pair by skills.  It was cool to work with Joe.  
+
 <h4>DAY 3</h4>
+Circles, object orientation, pair programming, and project time.
+
+Today we continued working on our projects using paired programming.  
+
+I paired up with Joe again and we reviewed the work we had done yesterday.  I ad to run out to meet with a thesis advisor but Joe had continued on and taken the animation to a nice conclusion.
+
+We started talking about his project.  He was doing an animation of the life of a giant star.  He was starting with a nebula and was interested in a CSS cloud animation I had on my web site.  He had found the tutorial that the animation was based on.  I explained how it worked and we discussed how it could be modified to suit his purposes.  I had previously done a nebular version of the cloud animation so I shared what I had learned about the animations strengths and weaknesses.  
+
+Next we discussed my GoPro project.  I explained that I had discovered the URL approach to controlling the camera. We discussed asynchronous http url calls and whether AJAX was the right approach.  Joe had an Ajax example he had used on a previous project but it was jQuery.  Joe was excited to work on his clouds, and I had a good direction with the GoPro so we split off to work on our independent projects.
 
 <h4>DAY 4</h4>
+Thursday was a day for demos.  It was good to interact with the other students about their passion projects.  There were some cool topics discussed such as the design of information aggregation tools for wikis and AR games.  At this point I thought that I had to learn node to get beyond file manipulation constraints.
 
+I had just learned that the smile detection API was a dead end and that I would need to find a new direction.  I thought that uploading a captured image to Flickr would be a reasonably achievable direction but hadnt found the right documentation to make the process clear.  I was watching a lot of node tutorials.
 
+<h4>DAY 5</h4>
+This was a production day.  Alec emphasized that Node didnt need to be framed as a web app to be useful.  However, the Node packages he used did have the limitation that I worried about.  Fortunately, he found JS file handling library and a trick to bounce a file from the screen to a download.  He also seemed to find a Flickr API tutorial that showed the same technique for uploading a file.  Unfortunately, when I tried to implement this later I discovered that the Flickr API had been updated and didnt match the technical recipe.  After working on this for several hours I set it aside.  
 
+Kamran had sent over a copy of his Um detector so I could see how he manipulated the Pocket Sphynx demo.  I played around with the demo and limited the word list to one trigger word.  It seemed extremely open to mis-interpretting noise.  Searching for further information I found an easy to use API for speech detection called AnnYang.  Encouraged by this find, I searched further and found a voice to speech API.  I found a few more emotion recogntion APIs but the best match had a low thresh hold of calls before triggering a payment.  Searching around I returned to an open source github project for face recognition it had a couple interesting directions. 
 
-  
+<h4>DAY 6</h4>
+This was a big breakthrough day for me.  I added full speech recognition and speech synthesis to my pomes project.  Its a bit buggy but works.  The only snag was the API losing its American Male voice in the middle of my implementation.  It started throwing errors and I spent two hours looking for a bug before discovering it was the API.  
+
+I then played with the face detection project for the rest of the day.  I was able to recreate the face detection demo.  I was able to recreate a demo for pulling emotional data from a video stream.  I spent most of my time trying to figure out how to turn the video stream into a frame grab.  I read a lot of documentation on video and canvas.  The emotion recognition project had very little documentation.  The Face detection documentation kept referencing academic papers that seemed to be behind a pay wall.  Eventually I figured out how to manipulate the emotion tracking data and then plug those functions into the face recognition loop.  I had smile detection.  It was nice to get past a four day roadblock!  :-)
+
+ 
+
 
